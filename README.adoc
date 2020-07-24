@@ -1,7 +1,7 @@
 = iot-hub-device-stream-proxy
 
 This builds a Docker image for trying the Device Streams feature of Azure IoT Hub.
-You can use it for starting a local proxy on the device side on for a service proxy.
+You can use it for starting a local proxy on the device side and for a service proxy.
 It is based on the following guide: https://docs.microsoft.com/en-us/azure/iot-hub/quickstart-device-streams-proxy-csharp
 
 The advantage of using this Docker image is that you do not have to install .NET locally.

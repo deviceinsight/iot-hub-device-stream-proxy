@@ -13,7 +13,7 @@ Let's say you have created a device with the device ID `test-device` on an Devic
 Start device proxy:
 
 ```
-docker run --net=host -ti --rm deviceinsight/iot-hub-device-streams-proxy device \
+docker run --net=host -ti --rm deviceinsight/iot-hub-device-stream-proxy device \
     "HostName=device-stream-test.azure-devices.net;DeviceId=test-device;SharedAccessKey=xxx" \
     127.0.0.1 22
 ```
@@ -21,7 +21,7 @@ docker run --net=host -ti --rm deviceinsight/iot-hub-device-streams-proxy device
 Start the service proxy:
 
 ```
-docker run --net=host -ti --rm deviceinsight/iot-hub-device-streams-proxy service \
+docker run --net=host -ti --rm deviceinsight/iot-hub-device-stream-proxy service \
     "HostName=device-stream-test.azure-devices.net;SharedAccessKeyName=service;SharedAccessKey=xxx" \
     test-device 2000
 ```
